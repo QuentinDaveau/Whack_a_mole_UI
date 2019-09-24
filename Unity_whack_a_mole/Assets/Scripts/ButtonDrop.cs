@@ -5,9 +5,9 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 
-public class ButtonInput : MonoBehaviour
+public class ButtonDrop : MonoBehaviour
 {
-    public InputField inputField;
+    public Dropdown dropDown;
 
     // Start is called before the first frame update
     void Start()
@@ -38,7 +38,7 @@ public class ButtonInput : MonoBehaviour
         else
         {
             GetComponent<Button>().interactable = false;
-            inputField.ActivateInputField();
+            // inputField.ActivateInputField();
         }
     }
 }
