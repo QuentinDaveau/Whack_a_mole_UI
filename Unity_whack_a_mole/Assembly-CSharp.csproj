@@ -53,6 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\ButtonTextController.cs" />
      <Compile Include="Assets\Scripts\ButtonDrop.cs" />
      <Compile Include="Assets\Scripts\ButtonInput.cs" />
      <Compile Include="Assets\Scripts\test.cs" />
