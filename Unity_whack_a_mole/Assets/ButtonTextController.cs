@@ -61,7 +61,14 @@ public class ButtonTextController : MonoBehaviour
         var inputText = inputField.GetComponent<InputField>().text;
         if (inputText != "")
         {
-            inputValue = int.Parse(inputField.GetComponent<InputField>().text);
+            var tempValue = int.Parse(inputField.GetComponent<InputField>().text);
+            
+            if (tempValue < 0)
+            {
+                return;
+            }
+
+            inputValue = tempValue;
 
             if (!swapInfoTextOrder)
             {
