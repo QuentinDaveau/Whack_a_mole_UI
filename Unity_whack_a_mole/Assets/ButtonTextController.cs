@@ -10,6 +10,7 @@ public class ButtonTextController : MonoBehaviour
     public GameObject infoText;
     public GameObject inputField;
     public int defaultValue = -1;
+    public int minValue = 0;
     public bool swapInfoTextOrder = false;
 
     private int inputValue = -1;
@@ -22,6 +23,10 @@ public class ButtonTextController : MonoBehaviour
         
         if (defaultValue != -1 && defaultValue <= 999)
         {
+            if (defaultValue < minValue)
+            {
+                defaultValue = minValue;
+            }
             inputField.GetComponent<InputField>().text = defaultValue.ToString();
             UpdateinputValue();
         }
@@ -63,7 +68,7 @@ public class ButtonTextController : MonoBehaviour
         {
             var tempValue = int.Parse(inputField.GetComponent<InputField>().text);
             
-            if (tempValue < 0)
+            if (tempValue < 0 || tempValue < minValue)
             {
                 return;
             }

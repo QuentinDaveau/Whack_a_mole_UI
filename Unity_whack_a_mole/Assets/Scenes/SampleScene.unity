@@ -349,6 +349,7 @@ MonoBehaviour:
   infoText: {fileID: 1586215067}
   inputField: {fileID: 2068471095}
   defaultValue: -1
+  minValue: 0
   swapInfoTextOrder: 0
 --- !u!114 &48503370
 MonoBehaviour:
@@ -1714,6 +1715,7 @@ MonoBehaviour:
   infoText: {fileID: 1345645576}
   inputField: {fileID: 1844960910}
   defaultValue: -1
+  minValue: 0
   swapInfoTextOrder: 0
 --- !u!114 &864104317
 MonoBehaviour:
@@ -2282,6 +2284,7 @@ MonoBehaviour:
   infoText: {fileID: 1744555548}
   inputField: {fileID: 826371146}
   defaultValue: 3
+  minValue: 1
   swapInfoTextOrder: 1
 --- !u!114 &1101164068
 MonoBehaviour:
